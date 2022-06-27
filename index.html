@@ -15,27 +15,120 @@
      <body>
 
         <header>
-        <nav class="navbar">
+        <nav class="navbar" id="chat">
             <a href="#">ACCUEIL</a>
-            <a href="Curriculum.html">CURRICULUM</a></li>
+            <a href="Curriculum.html">CURRICULUM</a>
             <a href="#">GALERIE</a>
             <a href="#">CONTACT</a>
         </nav>
         
-        <section>
+        <section class="presentation">
             <div class="text__hero">
         <h1>
             ANNE-SOPHIE DROZAK
         </h1>
         <div class="description">
-            <p>UX/UI DESIGNER - GRAPHIC DESIGNER</p>
+            <p class="job">UX/UI DESIGNER - GRAPHIC DESIGNER</p>
             <p>
                 Mon nom est Anne-Sophie Drozak, j’ai 28 ans et je vis à Anderlecht. Je me suis lancée dans l’UX/UI et dans le design graphique par passion. De là, j’ai découvert un grand intérêt pour le développement web en général.
             </p>
-            <a href="Curriculum.html">VOIR MON CV</a>
         </div>
+            <a href="Curriculum.html" class="bouton">VOIR MON CV</a>
+       
     </div>
 </section>
         </header>
+
+ <main>
+
+<section>
+<article class="menu">
+
+    <a href="#">TOUT</a>
+    <a href="#">PROTOTYPE UI</a>
+    <a href="#">DESIGN GRAPHIQUE</a>
+    <a href="#">DESIGN GRAPHIQUE AMA-EC</a>
+
+
+</article>
+
+
+<article class="galerie">
+    <table>
+        <tbody>
+          <tr>
+            <td rowspan="2">Image 1</td>
+            <td>Image 2</td>
+            <td rowspan="2">Image 3</td>
+            <td>Image 4</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Image 5</td>
+            <td crowspan="2">Image 6</td>
+          </tr>
+          <tr>
+            <td>Image 7</td>
+            <td>Image 8</td>
+          </tr>
+        </tbody>
+        </table>
+
+<!--    <table>
+        <tbody>
+          <tr>
+            <td rowspan="2">Image 1</td>
+            <td>Image 2</td>
+            <td rowspan="2">Image 3</td>
+            <td>Image 4</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Image 5</td>
+            <td crowspan="2">Image 6</td>
+          </tr>
+          <tr>
+            <td>Image 7</td>
+            <td>Image 8</td>
+          </tr>
+        </tbody>
+        </table>-->
+
+
+</article>
+
+</section>
+
+<section>
+    <h2>LET'S GET IN TOUCH</h2>
+        <div class="coord">
+                <p class="msg">Intéressé(e) par mon travail ?</p>
+                <p class="msg">Laissez-moi un message, ou contactez-moi!</p>
+            <article class="tel">
+                <p class="msg"><strong>Tel &amp; Whatsapp :</strong> +32 472 35 91 92</p>
+                <p class="msg"><strong>email :</strong> drozakannesophie&commat;gmail.com</p>
+            </article>
+        </div>
+        <form class="form" action="/action.php" method="post">
+
+        <div class="champs">
+            <div class="labelgroup">
+                <label for="">Nom, prénom</label>
+                <input name="name" type="text"/>
+            </div>
+             <div class="labelgroup">
+                <label for="">email</label>
+                <input name="name" type="email"/>
+             </div>  
+             <div class="labelgroup">
+                <label for="">Laissez-moi un message !</label>
+                <textarea cols="20" name="comments" rows="5"></textarea>
+            </div>
+        </div>
+            <input type="submit" value="ENVOYER" class="bouton"/>
+        </form>
+</section>
+
+ </main>
+
+<script src="script.js"></script>
 </body>
 </html>

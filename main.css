@@ -4,6 +4,19 @@ font-size: 16px;
 color: black;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #97D3D3 ;
+  border-bottom: 1px solid #97D3D3 ;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  font-style: bold;
+  font-size: 1rem;
+}
+
+/*------------HEADER------------*/
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -19,36 +32,141 @@ h1 {
    border-bottom: 1px solid black;
    text-align: center;
    line-height: 44px;
+   margin-bottom: 0;
 }
 
-section {
+.presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     min-height: 100vh;
     min-width: 70vw;
-background-image:url("Assets/Anne-Sophie_Profil.png");
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    background-image:url("Assets/Anne-Sophie_Profil.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .text__hero {
-    text-align: justify;
-    min-width: 60vw;
-
+    text-align: center;
+    max-width: 60vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .description {
-    max-width: 40vw;
-
+  padding: 0 10rem 3rem 10rem;
 }
+
+.job {
+margin-top: 0.2rem;
+font-size: 0.813rem;
+margin-bottom: 3rem;
+}
+
+.bouton {
+  background-color: #97D3D3 ;
+  color: white;
+  border-radius: 0.6rem;
+padding: 0.8rem;
+box-shadow: 0px 4px 4px 3px rgba(94, 179, 179, 0.53);
+max-width: 8rem;
+text-align: center;
+border: none;
+}
+
+/*------------GALERIE------------*/
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  border-top: 1px solid #97D3D3 ;
+  border-bottom: 1px solid #97D3D3 ;
+  padding: 0.6rem;
+  margin-top: 1rem;
+}
+
+.coord {
+  margin: 2rem 0 3rem 0;
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.msg {
+  margin: 0;
+}
+
+.tel {
+  color: #5eb3b3;
+  margin: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #D4E6E6;
+  padding: 3rem 0;
+  gap: 1rem;
+  align-items: center;
+}
+
+label {
+text-transform: uppercase;
+padding-top: 0.8rem;
+}
+
+.labelgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input {
+  height: 1.6rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+input, textarea {
+  background-color: #B1C2C2;
+  border-color: none;
+  border: none;
+  border-radius: none;
+}
+
+
+.champs {
+width: clamp(10rem, 40vw, 40rem);
+}
+
+/*------------GALERIE------------*/
+
+table {
+display: flex;
+justify-content: center;
+border-color: black;
+}
+
+td {
+  gap: 1rem;
+}
+
+tr {
+  gap: 1rem;
+}
+
+/*------------LINK------------*/
 
 a:link {
     text-decoration: none;
     color: black; 
+  
   }
   
   a:visited {
@@ -62,6 +180,8 @@ a:link {
   a:active {
     text-decoration: underline;
   }
+
+  /*------------MEDIA QUERIES------------*/
 
   @media screen and (max-width: 768px) {
     .navbar {
